@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Experiment 1</title>
+<title>Experiment 3</title>
 <style>
 body {
 background-color: #FFFAF0;
@@ -21,20 +21,20 @@ font-size: 30px;
 }
 
 .left {
-width: 100px;
-height: 100px;
-background: red;
-left: 150px;
+width: 105px;
+height: 105px;
+background: rgb(235,229,209);
+left: 175px;
 top: 30px;
 position: absolute;
 border-radius: 5px;
 }
 
 .right {
-width: 100px;
-height: 100px;
-background: blue;
-left: 350px;
+width: 105px;
+height: 105px;
+background: rgb(235,229,209);
+left: 325px;
 top: 30px;
 position: absolute;
 border-radius: 5px;
@@ -60,33 +60,29 @@ margin: 45px;
 border-radius: 10px;
 overflow: hidden;
 }
-        
-.middle {
-width: 100px;
-height: 100px;
-background-color: transparent;
-top: 30px;
-left: 250px;
-}
 
 @keyframes acid {
 0% {top: 30px;}
+50% {top: 30px;background-color:rgb(235,229,209);}
 100% {top: 200px; background-color: transparent;}
 }
 
 @keyframes base {
 0% {top: 30px;}
+50% {top: 200px;background-color:rgb(235,229,209);}
 100% {top: 200px; background-color: transparent;}
 }
 
 @keyframes indicator {
 0% { background-color: purple; }
-55% { background-color: purple; }
-100% { background-color: purple; }
+40% { background-color: rgb(13, 152, 186); }
+50% { background-color: red; }
+57% { background-color: purple; }
+100% { background-color: rgb(255,20,147); }
 }
 
 .left-acid {
-animation: acid 3s forwards;
+animation: acid 4s forwards;
 }
 
 .right-base {
@@ -94,7 +90,7 @@ animation: base 3s forwards;
 }
 
 .bottom-indicator {
-animation: indicator 5s forwards;
+animation: indicator 7s forwards;
 }
         
 .left,.right,.bottom {
@@ -121,6 +117,7 @@ text-align: center;
 }
 </style>
 </head>
+<body>
 <h1>
 <br/>CS1102 - Simulated Chemistory Reaction - 2025/2026 Semester A<br/>
 <br/>Experiment 1 - Observing a Neutralisation Reaction with Litmus<br/>
@@ -132,20 +129,20 @@ text-align: center;
 <button onclick="startAnimation()">Check it now!</button>
 
 <div class="box">
-<div class="left">HCl</div>
-<div class="right">NaOH</div>
-<div class="bottom">Purple Litmus Paper</div>
+<div class="left">Lemon Juice</div>
+<div class="right">Baking Soda Water</div>
+<div class="bottom">Red Cabbage Water</div>
 </div>
 
 <script>
 function startAnimation() {
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
-const bottom = document.querySelector('.bottom');
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const bottom = document.querySelector(".bottom");
 
-left.classList.remove('left-acid');
-right.classList.remove('right-base');
-bottom.classList.remove('bottom-indicator');
+left.classList.remove("left-acid");
+right.classList.remove("right-base");
+bottom.classList.remove("bottom-indicator");
             
 void left.offsetHeight;
 void right.offsetHeight;
@@ -155,12 +152,10 @@ void left.offsetWidth;
 void right.offsetWidth;
 void bottom.offsetWidth;
 
-left.classList.add('left-acid');
-right.classList.add('right-base');
-bottom.classList.add('bottom-indicator');
+left.classList.add("left-acid");
+right.classList.add("right-base");
+bottom.classList.add("bottom-indicator");
 }
 </script>
 </body>
 </html>
-
-
