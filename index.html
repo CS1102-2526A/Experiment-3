@@ -28,98 +28,98 @@
 		font-size: 15px;
 	}
 	
-.left {
-width: 100px;
-height: 100px;
-background: rgb(235,229,209);
-left: 175px;
-top: 30px;
-position: absolute;
-border-radius: 5px;
-}
-
-.right {
-width: 100px;
-height: 100px;
-background: rgb(235,229,209);
-left: 325px;
-top: 30px;
-position: absolute;
-border-radius: 5px;
-}
-
-.bottom {
-width: 300px;
-height: 100px;
-background-color: rgb(106,90,205);
-top: 200px;
-left: 150px;
-position: absolute;
-border-radius: 5px;
-}
-
-.box {
-position: relative;
-height: 350px;
-width: 600px;
-border: 1px solid grey;
-background-color: white;
-margin: 45px;
-border-radius: 10px;
-overflow: hidden;
-}
-
-@keyframes acid {
-0% {top: 30px;}
-50% {top: 30px;background-color:rgb(235,229,209);}
-100% {top: 200px; background-color: transparent;}
-}
-
-@keyframes base {
-0% {top: 30px;}
-50% {top: 200px;background-color:rgb(235,229,209);}
-100% {top: 200px; background-color: transparent;}
-}
-
-@keyframes indicator {
-0% { background-color: rgb(106,90,205); }
-40% { background-color: rgb(13, 152, 186); }
-50% { background-color: red; }
-57% { background-color: rgb(106,90,205); }
-100% { background-color: rgb(255,20,147); }
-}
-
-.left-acid {
-animation: acid 4s forwards;
-}
-
-.right-base {
-animation: base 3s forwards;
-}
-
-.bottom-indicator {
-animation: indicator 7s forwards;
-}
-        
-.left,.right,.bottom {
-position: absolute;
-border-radius: 5px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-color: grey;
-}
-
-.bottom {
-position: absolute;
-border-radius: 5px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-color: white;
-}
+	.left {
+		width: 100px;
+		height: 100px;
+		background: rgb(235,229,209);
+		left: 175px;
+		top: 30px;
+		position: absolute;
+		border-radius: 5px;
+	}
+	
+	.right {
+		width: 100px;
+		height: 100px;
+		background: rgb(235,229,209);
+		left: 325px;
+		top: 30px;
+		position: absolute;
+		border-radius: 5px;
+	}
+	
+	.bottom {
+		width: 300px;
+		height: 100px;
+		background-color: rgb(106,90,205);
+		top: 200px;
+		left: 150px;
+		position: absolute;
+		border-radius: 5px;
+	}
+	
+	.box {
+		position: relative;
+		height: 350px;
+		width: 600px;
+		border: 1px solid grey;
+		background-color: white;
+		margin: 45px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	
+	@keyframes acid {
+		0% {top: 30px;}
+		50% {top: 30px;background-color:rgb(235,229,209);}
+		100% {top: 200px; background-color: transparent;}
+	}
+	
+	@keyframes base {
+		0% {top: 30px;}
+		50% {top: 200px;background-color:rgb(235,229,209);}
+		100% {top: 200px; background-color: transparent;}
+	}
+	
+	@keyframes indicator {
+		0% { background-color: rgb(106,90,205); }
+		40% { background-color: rgb(13, 152, 186); }
+		50% { background-color: red; }
+		57% { background-color: rgb(106,90,205); }
+		100% { background-color: rgb(255,20,147); }
+	}
+	
+	.left-acid {
+		animation: acid 4s forwards;
+	}
+	
+	.right-base {
+		animation: base 3s forwards;
+	}
+	
+	.bottom-indicator {
+		animation: indicator 7s forwards;
+	}
+	        
+	.left,.right {
+		position: absolute;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		color: grey;
+	}
+	
+	.bottom {
+		position: absolute;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		color: white;
+	}
 
 	span {
 		font-weight: bold;
@@ -154,7 +154,7 @@ color: white;
         <p>When red cabbage is used as an indicator, red cabbage juice, whose original colour is purple-blue, changes from red to yellow and then to green as the pH value increases from 2 to 12.</p> 
 		
         <img src="https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2017/05/Making-a-Red-Cabbage-pH-Indicator.png?ssl=1" alt="Making an indicator from red cabbage" width="700"/>
- <p>(Source: Compound Interest <a href="https://www.compoundchem.com/2017/05/18/red-cabbage/">https://www.compoundchem.com/2017/05/18/red-cabbage/</a>)</p><br/>
+ 		<p>(Source: Compound Interest <a href="https://www.compoundchem.com/2017/05/18/red-cabbage/">https://www.compoundchem.com/2017/05/18/red-cabbage/</a>)</p><br/>
         
 	<h2><u>How to Make a pH Indicator with Red Cabbage?</u></h2>
 		<p>Now, we can observe a neutralization reaction of HCl and NaOH with Universal Indicator by a simple animation.</p>
@@ -178,39 +178,40 @@ color: white;
         <p><span>Click the button to check what color there is.</span></p>
 		<button onclick="startAnimation()">Check it now!</button>
 
-<p>Please note that the colour of the DIY indicator, lemon juice, baking sodawater and their mixture are determined by the their concentration. The colour display in the simulation may differ from the real situation.</p>
-<div class="box">
-<div class="left">Lemon Juice</div>
-<div class="right">Baking Soda Water</div>
-<div class="bottom">Red Cabbage Water</div>
-</div>
-
-<script>
-function startAnimation() {
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
-const bottom = document.querySelector(".bottom");
-
-left.classList.remove("left-acid");
-right.classList.remove("right-base");
-bottom.classList.remove("bottom-indicator");
-            
-void left.offsetHeight;
-void right.offsetHeight;
-void bottom.offsetHeight;
-            
-void left.offsetWidth;
-void right.offsetWidth;
-void bottom.offsetWidth;
-
-left.classList.add("left-acid");
-right.classList.add("right-base");
-bottom.classList.add("bottom-indicator");
-}
-
-</script>
-<p>Let's move to <a href="https://cs1102-2526a.github.io/Experiment-4/">Experiment 4</a> to see the neutralisation reaction with Universal Indicator</p>
+		<p>Please note that the colour of the DIY indicator, lemon juice, baking sodawater and their mixture are determined by the their concentration. The colour display in the simulation may differ from the real situation.</p>
+		<div class="box">
+		<div class="left">Lemon Juice</div>
+		<div class="right">Baking Soda Water</div>
+		<div class="bottom">Red Cabbage Water</div>
+		</div>
+		
+			<script>
+			function startAnimation() {
+			const left = document.querySelector(".left");
+			const right = document.querySelector(".right");
+			const bottom = document.querySelector(".bottom");
+			
+			left.classList.remove("left-acid");
+			right.classList.remove("right-base");
+			bottom.classList.remove("bottom-indicator");
+			            
+			void left.offsetHeight;
+			void right.offsetHeight;
+			void bottom.offsetHeight;
+			            
+			void left.offsetWidth;
+			void right.offsetWidth;
+			void bottom.offsetWidth;
+			
+			left.classList.add("left-acid");
+			right.classList.add("right-base");
+			bottom.classList.add("bottom-indicator");
+			}
+			
+			</script>
+	<p>Let's move to <a href="https://cs1102-2526a.github.io/Experiment-4/">Experiment 4</a> to see another acid-base reaction by using a DIY pH indicator!</p>
 
 </body>
 </html>
+
 
